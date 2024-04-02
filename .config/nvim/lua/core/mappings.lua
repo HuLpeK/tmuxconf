@@ -186,6 +186,12 @@ M.lspconfig = {
       end,
       "LSP code action",
     },
+    ["<leader>cc"] = {
+      function()
+        vim.api.nvim_command(":ClangdSwitchSourceHeader")
+      end,
+      "Clangd change Source/Header",
+    },
 
     ["gr"] = {
       function()
